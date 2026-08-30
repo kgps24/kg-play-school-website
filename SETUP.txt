@@ -1,0 +1,30 @@
+KG PLAY SCHOOL - ADMISSION EMAIL SETUP
+
+Upload these files/folders to the ROOT of the GitHub repository:
+
+index.html
+script.js
+package.json
+api/admission.js
+
+Keep your existing styles.css, assets folder and vercel.json unchanged.
+
+VERCEL ENVIRONMENT VARIABLES
+1. Open your Vercel project.
+2. Go to Settings -> Environment Variables.
+3. Add:
+   EMAIL_USER = kgplayschool24@gmail.com
+   EMAIL_APP_PASSWORD = your Google 16-character App Password
+   EMAIL_TO = kgplayschool24@gmail.com
+4. Apply the variables to Production (and Preview if desired).
+5. Redeploy the latest deployment after saving the variables.
+
+IMPORTANT
+- Do NOT put EMAIL_APP_PASSWORD in GitHub, index.html or script.js.
+- EMAIL_APP_PASSWORD is not your normal Gmail password.
+- The Gmail account normally needs 2-Step Verification enabled before an App Password can be created.
+
+TEST
+Open the live Vercel website, fill the admission form and click Send admission enquiry.
+The page should stay open and display a success message.
+The email should arrive at kgplayschool24@gmail.com.
